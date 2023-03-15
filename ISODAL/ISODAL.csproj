@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A9D427B0-FF4C-4D4F-B5FA-894A8CB733C7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ISODAL</RootNamespace>
+    <AssemblyName>ISODAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuildingTypeDAL.cs" />
+    <Compile Include="ContractPDFDAL.cs" />
+    <Compile Include="DailyPlanDAL.cs" />
+    <Compile Include="FormMenuDAL.cs" />
+    <Compile Include="ISOModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ISOModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ISOModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ISOModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ISOModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSchedulePDFDAL.cs" />
+    <Compile Include="MonthlyPlanDAL.cs" />
+    <Compile Include="NameOfWorkDAL.cs" />
+    <Compile Include="OperationOrderDAL.cs" />
+    <Compile Include="OperationOrderRegDAL.cs" />
+    <Compile Include="OPTypeDAL.cs" />
+    <Compile Include="PersonDAL.cs" />
+    <Compile Include="PersonTypeDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PersonAndSiteDAL.cs" />
+    <Compile Include="ResponsibilityTypeDAL.cs" />
+    <Compile Include="SiteDAL.cs" />
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ActualDate.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_BuildingType.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ContractPDF.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_DailyPlan.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_DailyPlanDetail.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FormMenu.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LabourType.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_MasterSchedulePDF.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_MonthlyPlan.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_MonthlyPlanDetail.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_NameOfWork.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OperationOrder.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OperationOrderReg.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OPType.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Person.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_PersonAndSite.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_PersonType.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_PlanDate.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ResponsibilityType.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Site.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SOPMeetingPDF.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_User.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_UserRole.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Weather.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_WeeklyPlan.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_WeeklyPlanDetail.cs">
+      <DependentUpon>ISOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserDAL.cs" />
+    <Compile Include="UserRoleDAL.cs" />
+    <Compile Include="WeeklyPlanDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="ISOModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ISOModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ISOModel.edmx.diagram">
+      <DependentUpon>ISOModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ISOServiceVO\ISOServiceVO.csproj">
+      <Project>{78e12255-0f55-4182-8726-4df4d1e5d5bc}</Project>
+      <Name>ISOServiceVO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ISOModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ISOModel.edmx</DependentUpon>
+      <LastGenOutput>ISOModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ISOModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ISOModel.edmx</DependentUpon>
+      <LastGenOutput>ISOModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

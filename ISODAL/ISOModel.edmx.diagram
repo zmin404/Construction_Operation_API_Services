@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="af631ee9e0f84e43acacea1c613d0284" Name="Diagram1" ZoomLevel="108">
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_ActualDate" Width="1.5" PointX="12" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_BuildingType" Width="1.5" PointX="5.25" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_ContractPDF" Width="1.5" PointX="7.5" PointY="55.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_FormMenu" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_LabourType" Width="1.5" PointX="5.25" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_MasterSchedulePDF" Width="1.5" PointX="7.5" PointY="57.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_MonthlyPlanDetail" Width="2" PointX="9.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_NameOfWork" Width="1.5" PointX="7.5" PointY="34.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_OperationOrder" Width="1.5" PointX="7.5" PointY="38.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_OperationOrderReg" Width="1.5" PointX="10.5" PointY="36.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_OPType" Width="1.5" PointX="5.25" PointY="44" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_Person" Width="1.5" PointX="13.5" PointY="39.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_PersonAndSite" Width="1.5" PointX="15.75" PointY="42.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_PersonType" Width="1.5" PointX="5.25" PointY="52.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_PlanDate" Width="1.5" PointX="12" PointY="26.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_ResponsibilityType" Width="1.5" PointX="13.5" PointY="50.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_Site" Width="1.5" PointX="5.25" PointY="56.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_SOPMeetingPDF" Width="1.5" PointX="7.5" PointY="60.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_User" Width="1.5" PointX="3" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_UserRole" Width="1.5" PointX="0.75" PointY="31" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_Weather" Width="1.5" PointX="8.25" PointY="51.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_WeeklyPlan" Width="1.5" PointX="13.5" PointY="44.875" IsExpanded="true" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_MonthlyActualDate_tbl_MonthlyPlanDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_BuildingType_tbl_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_OperationOrder_tbl_BuildingType" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_OperationOrderReg_tbl_BuildingType" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_ContractPDF_tbl_Site" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_LabourType_tbl_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_MasterSchedulePDF_tbl_Site" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_MonthlyPlanDate_tbl_MonthlyPlanDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_MonthlyPlanDetail_tbl_NameOfWork" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_MonthlyPlanDetail_tbl_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_NameOfWork_tbl_OPType" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_NameOfWork_tbl_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_OperationOrder_tbl_OperationOrderRegistration" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_OperationOrder_tbl_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_OperationOrder_tbl_PersonSE" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_OperationOrder_tbl_PersonStoreKeeper" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_OperationOrder_tbl_Site" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_OperationOrder_tbl_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_OperationOrder_tbl_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_OperationOrderReg_tbl_PersonSI" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_OperationOrderReg_tbl_PersonStoreKeeper" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_OperationOrderReg_tbl_PesonSE" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_OperationOrderReg_tbl_Site" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_OperationOrderReg_tbl_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_OPType_tbl_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_Person_tbl_PersonType" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_Person_tbl_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_PersonAndSite_tbl_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_User_tbl_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_PersonAndSite_tbl_ResponsibilityType" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_PersonAndSite_tbl_Site" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_PersonAndSite_tbl_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_PersonType_tbl_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_Site_tbl_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_SOPMeetingPDF_tbl_Site" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_WeeklyPlan_tbl_Site" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_User_tbl_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_User_tbl_UserRole" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_WeeklyPlan_tbl_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_WeeklyPlan_tbl_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_WeeklyPlan_tbl_User2" ManuallyRouted="false" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_WeeklyPlan_tbl_User3" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_MonthlyPlan" Width="2" PointX="10.5" PointY="49.875" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_MonthlyPlan_tbl_Site" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_MonthlyPlan_tbl_User" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_MonthlyPlan_tbl_User1" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_MonthlyPlan_tbl_User2" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_MonthlyPlan_tbl_User3" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_MonthlyPlanDetail_tbl_MonthlyPlan" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_WeeklyPlanDetail" Width="1.5" PointX="15.75" PointY="34.25" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_WeeklyPlanDetail_tbl_NameOfWork" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_WeeklyPlanDetail_tbl_User" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_WeeklyPlanDetail_tbl_WeeklyPlan" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_DailyPlan" Width="1.5" PointX="18.75" PointY="42.25" />
+        <EntityTypeShape EntityType="ISOFormatModel.tbl_DailyPlanDetail" Width="1.5" PointX="14.75" PointY="26.25" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_DailyPlan_tbl_Person" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_DailyPlan_tbl_Site" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_DailyPlan_tbl_User" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_DailyPlan_tbl_User1" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_DailyPlan_tbl_User2" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_DailyPlan_tbl_User3" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_DailyPlan_tbl_User4" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_DailyPlan_tbl_Weather" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_DailyPlanDetail_tbl_DailyPlan" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_DailyPlanDetail_tbl_LabourType" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_DailyPlanDetail_tbl_NameOfWork" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_DailyPlanDetail_tbl_User" />
+        <EntityTypeShape EntityType="ISOFormatModel.sysdiagram" Width="1.5" PointX="3.375" PointY="0.75" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_MonthlyPlan_tbl_Person" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_MonthlyPlan_tbl_User21" />
+        <AssociationConnector Association="ISOFormatModel.FK_tbl_MonthlyPlan_tbl_User31" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
